@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Tania Grande, Pesonal Shopper</title>
     <link rel="shortcut icon" href="favicon_io/android-chrome-512x512.png">
-    <meta http-equiv="refresh" content="5;url=https://fashionpersonalshopper.000webhostapp.com/">
+    <meta http-equiv="refresh" content="3;url=https://fashionpersonalshopper.000webhostapp.com/">
 </head>
 <body>
 

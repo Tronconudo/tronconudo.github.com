@@ -28,7 +28,7 @@ hr {
   border: dotted var(--primario) 6px;
   border-bottom: none;
   background-color: var(--blanco);
-  margin: 60px auto 60px auto;
+  margin: 8rem auto 8rem auto;
 
 }
 
@@ -95,6 +95,33 @@ a:hover {
     color: var(--oscuro);
 }
 
+.boton2 {
+  color:var(--blanco);
+  background-color: var(--oscuro);
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .5rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+@media (min-width: 768px) {
+  .boton2 {
+    width: 25%;
+    margin: auto auto;
+}
+}
+.boton2:hover {
+    cursor: pointer;
+    color: var(--secundario);
+}
+
+
+
 /* Tipografia */
 
 h1 {
@@ -104,7 +131,6 @@ h1 {
 h2 {
   font-size: 2.8rem; 
   font-family: 'Dosis', sans-serif;
-  color: var(--secundario);
   font-weight: bold;
 }
 h3 {
@@ -160,9 +186,13 @@ h1,h2,h3 {
 /* Main */
 
 .hero {  
+  display: flex;
   height: 63rem;
-  position: relative;
+  justify-items: center;
+  align-items: center;
   margin-bottom: 2rem;
+  align-content: center;
+  text-align: center;
 
 }
 
@@ -192,17 +222,14 @@ h1,h2,h3 {
 }
 
 .contenido-hero {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  
+  width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
+  margin: auto auto;
 }
 
-.contenido-hero h2,
+.contenido-hero h1,
 .contenido-hero p {
     color: var(--blanco);
 }
@@ -353,6 +380,8 @@ h1,h2,h3 {
 .margin-top {
   margin-top: 8rem;
 }
+
+
 
 .w-100 {
   width: 100%;
