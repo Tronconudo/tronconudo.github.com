@@ -1,11 +1,11 @@
 :root {
   --primario: #b17578;
   --secundario: #ad5f63; 
-  --terciario: #d9cbd1;
+  --terciario: #6EFA92;
   --oscuro: #143F6B;
   --blanco: #ffffff;
   --fondo1: #FDF6F0;
-  --fondo2: #FBF8F2;
+  --fondo2: #3BAD58;
 
 }
 
@@ -52,7 +52,7 @@ a{
 
 a:hover {
   cursor: pointer;
-  color: var(--oscuro);
+  color: var(--terciario);
 }
 
 /* contenerdores */
@@ -97,7 +97,7 @@ a:hover {
 
 .boton2 {
   color:var(--blanco);
-  background-color: var(--oscuro);
+  background-color: var(--fondo2);
   padding: 1rem 3rem;
   margin-top: 3rem;
   font-size: 2rem;
@@ -111,7 +111,7 @@ a:hover {
 }
 @media (min-width: 768px) {
   .boton2 {
-    width: 25%;
+    width: auto;
     margin: auto auto;
 }
 }
@@ -179,7 +179,7 @@ h1,h2,h3 {
 }
 
 .navegacion-principal a:hover {
-  color: var(--oscuro);
+  color: var(--terciario);
   cursor: pointer;
 }
 
@@ -475,5 +475,58 @@ h1,h2,h3 {
 .datos-contacto {
   display: flex;
   justify-content: space-around;
+}
+
+/* newsletter */
+
+
+
+
+    
+
+.contenedor-personal {
+
+  background-image: url(../images/front-view-of-woman-with-shopping-bag-concept.jpg);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+
+.titulo-contenedor {
+  padding: 3rem 0;
+}
+
+.influencers {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .influencers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 13rem;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+}
+
+.influencers img {
+  width: 20rem;
+  border-radius: 50%;
+}
+.influencer h2 {
+  margin: 2rem auto;
+  padding: 2rem auto;
+}
+
+.influencer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
