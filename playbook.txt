@@ -1,0 +1,69 @@
+1º Generar contenido:
+
+
+
+
+2º Estructurar contenido:
+
+Etiquetas:
+
+  header:
+  footer
+  nav
+  main: contenido principal
+  section: Generalmente lo hemos de usar si el primer elemento dentro es un heading, a no ser que usemos main
+  article: entrada de noticas
+  aside: barra lateral
+  div:
+
+
+span no hace nada mas que agregar una etiqueta
+
+
+
+html {
+  font-size: 62.5%
+}
+
+body{
+  font-size: 16;
+}
+
+agrando estos selectores con estas propiedades hacemos que 1 rem = 10px
+
+display block; los elementos se colocan uno de bajo de otro, da igual el tamaño.
+
+display inline : el elemento se posicionara a la deracha una vez que haya tomado el expacion que requiere
+
+display flexbox : solo se puede colocar elementos en una sola direccion row o column (Por defecto row)
+ row: los elementos se ponen de izquierda a derecha
+  propiedad justify content
+ columna: de arriba abjo
+  align-items
+
+display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%; /* estamos definiendo tres columnas */
+  grid-template-rows: 300px 800px; /* estamos definiendo dos filas una de 300 y otra de 800 */
+
+esto seria lo mismo a grid: 300px 800px / 33% 33% 33%
+
+a:hover
+a:focus
+a:visited
+
+max-width: px; hace que no forcemos el tamañode div si la pantalla es mas pequeña.
+
+background-image: url(../images/pexels-cottonbro-5914913.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+css box model(para arreglarlo):
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, a:after {
+  box-sizing: inherit;
+}
+

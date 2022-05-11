@@ -1,0 +1,58 @@
+<?php
+$servername = "mysql.hostinger.co.uk";
+$database = "u266072517_name";
+$username = "u266072517_user";
+$password = "buystuffpwd";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+}
+ 
+echo "Connected successfully";
+ 
+$sql = "INSERT INTO Students (name, lastname, email) VALUES ('Test', 'Testing', 'Testing@tesing.com')";
+if (mysqli_query($conn, $sql)) {
+      echo "New record created successfully";
+} else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);
+?>
+
+<?php
+$servername = "localhost";
+$database = "id18881029_insert";
+$username = "id18881029_tronconudo";
+$password = "\h8]0Sy0B3c|6}0l";
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+if(isset($_POST['submit'])){
+
+    if(!empty($_POST['nombre']) && !empty($_POST['telefono']) !empty($_POST['email']) !empty($_POST['mensage'])){
+        $nombre = $_POST ["nombre"] ;
+        $email = $_POST ["email"] ;
+        $telefono = $_POST ["telefono"] ;
+        $mensage = $_POST ["mensage"] ;
+
+        $query = "INSERT INTO form (name, telefono, mensage) values($nombre , $email , $telefono , $mensage") ;
+
+        $run = mysqli_query($conn, $query) or die(mysqli_error());
+    
+        if($run ){
+            echo "Formulario rellenado correctamente" ;
+        }
+        else{
+            echo "Formulario erroneo" ;
+        }
+    }
+
+    else {
+        echo "all fields required";
+    }
+
+}
+
+?>
