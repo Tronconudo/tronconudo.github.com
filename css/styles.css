@@ -157,6 +157,7 @@ h1,h2,h3 {
   display: flex;
   flex-direction: column;
   color: var(--blanco);
+  padding-top: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -221,12 +222,23 @@ h1,h2,h3 {
 }
 }
 
+@media (min-width: 780px) {
+  
 .contenido-hero {
   
   width: 60%;
   display: flex;
   flex-direction: column;
   margin: auto auto;
+}
+}
+
+.contenido-hero {
+  
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .contenido-hero h1,
@@ -243,6 +255,9 @@ h1,h2,h3 {
   box-shadow: 4px 4px 5px -3px rgba(0,0,0,0.35);
   background-color: var(--blanco);
 } */
+
+
+
 
 
 @media (min-width: 768px) {
@@ -448,19 +463,36 @@ h1,h2,h3 {
 
 /* nosotros */
 
-.tania {
-  display: grid;
-  grid-template-columns: 40% 60%;
+@media (min-width: 780px) {
+  
+  .tania  {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+}
+@media (min-width: 780px) {
+  .rafa {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
 }
 
-.rafa {
-  display: grid;
-  grid-template-columns: 60% 40%;
+.tania {
+  display: flex;
+  flex-direction: column;
 }
+
+.rafa{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
 
 .foto-nosotros {
   width: 20rem;
-  border-radius: 50%;
+  border-radius: 30%;
   ;
 }
 
