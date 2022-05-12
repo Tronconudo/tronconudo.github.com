@@ -245,14 +245,6 @@ h1,h2,h3 {
 } */
 
 
-
-@media (max-width: 768px) {
-  .navegacion-principal, .servicios, .personal, .formulario {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-  }
-}
-
 @media (min-width: 768px) {
   .servicios {
       display: grid;
